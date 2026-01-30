@@ -1,5 +1,4 @@
-*.jpg
-*.css
+
 node_modules/
 AnimalCard.html
 login.html
@@ -8,3 +7,4 @@ biography.css
 biography.html
 portfolio.html
 pracBootstrap.html
+inputs.css
