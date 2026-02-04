@@ -1,0 +1,92 @@
+body{
+   text-align: center;
+   background-color: antiquewhite;
+}
+
+h1{
+   background-color: aqua;
+   width: 500px;
+   margin-left: 34%;
+   padding: 20px;
+   border-radius: 30px;
+}
+
+.course{
+   font-size: 30px;
+   font-style: italic;
+   text-decoration: underline;
+}
+
+p{
+   font-size: 25px;
+}
+
+img{
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+}
+
+.name{
+   color: navy;
+   font-size: 30px;
+   font-style: italic;
+   font-weight: bold;
+   text-decoration: underline;
+}
+
+.techstak, .achievement{
+   border: solid black 1px;
+   width: 450px;
+   height: 300px;
+   margin-left: 20px;
+   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 
+              0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.achievement:hover{
+   top: -10px;
+   background-color: blue;
+   color: black;
+   cursor: pointer;
+}
+
+.techstak:hover{
+   top: -10px;
+   background-color: blue;
+   color: black;
+   cursor: pointer;
+}
+
+.techHeading{
+   font-size: 38px;
+   font-style: italic;
+   color: navy;
+   font-style: italic;
+
+}
+
+ul, ol{
+   margin-left: 50px;
+   text-align: start;
+   font-size: 35px;
+}
+
+.boxes{
+   display: grid;
+   grid-template-columns: auto auto;
+   justify-content: space-around;
+   margin-top: 50px;
+   margin-bottom: 50px;
+}
+
+.secPage{
+   font-size: 28px;
+   text-decoration: underline;
+   margin-bottom: 30px;
+   color: black;
+   font-style: italic;
+   
+}
+
+

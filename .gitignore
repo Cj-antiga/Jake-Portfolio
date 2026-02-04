@@ -1,10 +1,16 @@
+<<<<<<< HEAD
 
+=======
+*.jpg
+css
+>>>>>>> bcb8606 (Connects the biography and add the biography file)
 node_modules/
 AnimalCard.html
 login.html
 inputs.html
-biography.css
-biography.html
+intro.js
+intro.html
+inputs.css
 portfolio.html
 pracBootstrap.html
 inputs.css
