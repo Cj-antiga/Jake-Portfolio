@@ -3,18 +3,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Jake</title>
-   <!--<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+   <title>Christian Jake - Portfolio</title>
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
    <link rel="stylesheet" href="portfolio.css">
 </head>
-<body>
-
+<body data-bs-spy="scroll" data-bs-target="#navMenu">
 
    <!--Navigation bar-->
    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Christian Jake</a>
+      <a class="navbar-brand fw-bold fade-in" href="#">Christian Jake</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
          <span class="navbar-toggler-icon"></span>
@@ -35,116 +33,248 @@
    <!--Home page section-->
    <section id="home">
       <div class="container-fluid m-auto bg-black vh-100 d-flex flex-column justify-content-center align-items-center text-white mb-5">
-         <div class="row align-items-start justify-content-evenly w-100">
-            <div class="col-12 col-lg-5 ms-5">
-               <h2 class="display-4 fw-bold" >Hi, I'm <span id="intro">Christian Jake</span></h2>
+         <div class="row align-items-center justify-content-evenly w-100">
+            <div class="col-12 col-lg-5 ms-5 slide-in-left">
+               <h2 class="display-4 fw-bold" >Hi, I'm <span id="intro" class="glowing-text">Christian Jake</span></h2>
                <p class="lead" id="sub-intro">IT Student • Beginner Web Developer</p>
-               <p class="fs-5 ">
-                  I’m an IT student and aspiring web developer who enjoys turning ideas into functional and visually clean websites. I’m currently focused on learning modern web technologies and improving my skills by building projects and experimenting with different designs.
+               <p class="fs-5 fade-in-delay">
+                  I'm an IT student and aspiring web developer who enjoys turning ideas into functional and visually clean websites. I'm currently focused on learning modern web technologies and improving my skills by building projects and experimenting with different designs.
                </p>
-               <a href="#projects" class="btn btn-light btn-md mt-3 w-25" id="getInTouch">Get in Touch</a>
-               <a href="biography.html" class="btn btn-light btn-md mt-3 ms-2 w-25 ms-3" id="viewMore">View More</a>
+               <a href="#contact" class="btn btn-light btn-md mt-3 w-25 btn-hover" id="getInTouch">Get in Touch</a>
+               <a href="biography.html" class="btn btn-light btn-md mt-3 ms-2 w-25 ms-3 btn-hover" id="viewMore">View More</a>
             </div>
-            <div class="col-12 col-lg-5 text-center">
-               <img src="profile.jpg" class="img-fluid rounded-5 profile-img" alt="profile picture">
+            <div class="col-12 col-lg-5 text-center slide-in-right">
+               <img src="profile.jpg" class="img-fluid rounded-5 profile-img floating" alt="profile picture">
             </div>
          </div>
       </div>
    </section>
 
-   <!--About page section-->
-   <section id="about" class="vh-100">
-      <div class="container-fluid m-auto d-flex justify-content-center align-items-center text-white mt-5">
-         <div class="row align-items-center justify-content-center w-100 text-center">
-            <div class="col-12 col-lg-6">
-               <h2 id="about">ABOUT ME</h2>
-               <p class="text-start mt-5 fs-5 about-text">
-                  I’m an IT student with a strong interest in web development and a passion for creating clean, responsive, and user-friendly websites. I enjoy turning ideas into functional digital experiences and continuously improving my skills through hands-on projects, self-learning, and experimentation with modern web technologies. Building things from scratch and seeing them come to life on the screen motivates me to keep learning and growing as a developer. 
+   <!--About page section with Bento Box Design-->
+   <section id="about" class="min-vh-100 py-5">
+      <div class="container mt-5">
+         <h2 class="text-center mb-5 section-title" data-text="ABOUT ME">ABOUT ME</h2>
+         
+         <!-- Bento Grid Layout -->
+         <div class="bento-grid">
+            <!-- Large text block -->
+            <div class="bento-item bento-large glass-effect slide-up">
+               <h3 class="mb-4 text-gradient">Who I Am</h3>
+               <p class="fs-5">
+                  I'm an IT student with a strong interest in web development and a passion for creating clean, responsive, and user-friendly websites. I enjoy turning ideas into functional digital experiences and continuously improving my skills through hands-on projects, self-learning, and experimentation with modern web technologies.
                </p>
-               <br>
-               <p class="text-start fs-5 about-text">
-                  Currently, I’m focused on strengthening my foundation in front-end development while exploring best practices in design and usability. I aim to develop websites that are not only visually appealing but also practical and easy to use. As I continue my journey, I’m eager to learn new tools, collaborate with others, and take on real-world projects that will help me grow both technically and creatively. 
+            </div>
+
+            <!-- Profile highlight -->
+            <div class="bento-item bento-medium glass-effect slide-up" style="animation-delay: 0.1s;">
+               <div class="stats-card">
+                  <h1 class="display-3 fw-bold text-gradient">2+</h1>
+                  <p class="lead">Years of Learning</p>
+               </div>
+            </div>
+
+            <!-- Quote box -->
+            <div class="bento-item bento-medium glass-effect slide-up" style="animation-delay: 0.2s;">
+               <div class="quote-card">
+                  <div class="quote-icon">"</div>
+                  <p class="fst-italic">Building things from scratch and seeing them come to life motivates me to keep learning.</p>
+               </div>
+            </div>
+
+            <!-- Goal statement -->
+            <div class="bento-item bento-wide glass-effect slide-up" style="animation-delay: 0.3s;">
+               <h4 class="mb-3 text-gradient">My Focus</h4>
+               <p>
+                  Currently, I'm focused on strengthening my foundation in front-end development while exploring best practices in design and usability. I aim to develop websites that are not only visually appealing but also practical and easy to use.
                </p>
             </div>
          </div>
       </div>
-      </div>
    </section>
 
-   <section id="skills" class="vh-100">
-      <div class="col">
-         <h2 class="text-center mb-5" id="skillAndTech">SKILLS AND TECHNOLOGIES</h2>
-      </div>
-      <div class="container-fluid m-auto d-flex justify-content-center align-items-center text-white mt-5 py-5">
-         <div class="row align-items-center justify-content-center w-100 text-center">
-            <div class="col-lg-2 mx-5 skills rounded-pill">
-               <h3 class="mt-5">FRONTEND</h3>
-               <p class="mt-auto mb-0">HTML, CSS, Javascript - use for creating responsive and interactive wesite</p>
+   <!-- Skills Section -->
+   <section id="skills" class="min-vh-100 py-5">
+      <div class="container">
+         <h2 class="text-center mb-5 section-title" data-text="SKILLS">SKILLS AND TECHNOLOGIES</h2>
+         
+         <div class="row g-4 justify-content-center">
+            <div class="col-lg-3 col-md-6">
+               <div class="skill-card glass-effect scale-in">
+                  <div class="skill-icon">💻</div>
+                  <h3 class="mt-4">FRONTEND</h3>
+                  <p class="mt-3">HTML, CSS, Javascript - use for creating responsive and interactive website</p>
+               </div>
             </div>
-            <div class="col-lg-2 mx-5 skills rounded-pill">
-               <h3 class="mt-5">BACKEND</h3>
-               <p class="mt-auto mb-0">PHP, MySql, Laravel, Nodejs - for database management</p>
+            <div class="col-lg-3 col-md-6">
+               <div class="skill-card glass-effect scale-in" style="animation-delay: 0.1s;">
+                  <div class="skill-icon">⚙️</div>
+                  <h3 class="mt-4">BACKEND</h3>
+                  <p class="mt-3">PHP, MySQL, Laravel, Node.js - for database management</p>
+               </div>
             </div>
-            <div class="col-lg-2 mx-5 skills rounded-pill">
-               <h3 class="mt-5">TOOLS</h3>
-               <p class="mt-auto mb-0">Git, Github, VsCode - development tools and version control</p>
+            <div class="col-lg-3 col-md-6">
+               <div class="skill-card glass-effect scale-in" style="animation-delay: 0.2s;">
+                  <div class="skill-icon">🛠️</div>
+                  <h3 class="mt-4">TOOLS</h3>
+                  <p class="mt-3">Git, Github, VsCode - development tools and version control</p>
+               </div>
             </div>
          </div>
       </div>
    </section>
 
-   <section id="projects" class="vh-100">
-      <div class="container text-center">
-         <h2 class="fw-bold mb-5" id="proj">PROJECTS</h2>
+   <!-- Projects Section -->
+   <section id="projects" class="min-vh-100 py-5">
+      <div class="container">
+         <h2 class="text-center mb-5 section-title" data-text="PROJECTS">PROJECTS</h2>
 
          <div class="row g-4">
             <div class="col-md-4">
-            <div class="card shadow h-100">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAHBzbqYzKfBzejLwZxohAqW0yFneuzxZ9g&s" class="card-img-top">
-               <div class="card-body">
-                  <h5 class="card-title">Project One</h5>
-                  <p class="card-text">Simple responsive website using HTML & CSS.</p>
-                  <a href="#" class="btn btn-primary btn-sm">View</a>
+               <div class="project-card shadow h-100 fade-in-up">
+                  <div class="project-img-wrapper">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSAHBzbqYzKfBzejLwZxohAqW0yFneuzxZ9g&s" class="card-img-top" alt="Project One">
+                     <div class="project-overlay">
+                        <a href="#" class="btn btn-light">View Project</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Project One</h5>
+                     <p class="card-text">Simple responsive website using HTML & CSS.</p>
+                  </div>
                </div>
-            </div>
             </div>
 
             <div class="col-md-4">
-            <div class="card shadow h-100">
-               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchkMuYaRy4tWea3W-VEvaHSmbmt2R6x2W_A&s" class="card-img-top">
-               <div class="card-body">
-                  <h5 class="card-title">Project Two</h5>
-                  <p class="card-text">Bootstrap landing page with grid system.</p>
-                  <a href="#" class="btn btn-primary btn-sm">View</a>
+               <div class="project-card shadow h-100 fade-in-up" style="animation-delay: 0.1s;">
+                  <div class="project-img-wrapper">
+                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSchkMuYaRy4tWea3W-VEvaHSmbmt2R6x2W_A&s" class="card-img-top" alt="Project Two">
+                     <div class="project-overlay">
+                        <a href="#" class="btn btn-light">View Project</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Project Two</h5>
+                     <p class="card-text">Bootstrap landing page with grid system.</p>
+                  </div>
                </div>
-            </div>
             </div>
 
             <div class="col-md-4">
-            <div class="card shadow h-100">
-               <img src="https://pbs.twimg.com/profile_images/1519851219313135616/aGV94IOE_400x400.jpg" class="card-img-top">
-               <div class="card-body">
-                  <h5 class="card-title">Project Three</h5>
-                  <p class="card-text">Personal portfolio website.</p>
-                  <a href="#" class="btn btn-primary btn-sm">View</a>
+               <div class="project-card shadow h-100 fade-in-up" style="animation-delay: 0.2s;">
+                  <div class="project-img-wrapper">
+                     <img src="https://pbs.twimg.com/profile_images/1519851219313135616/aGV94IOE_400x400.jpg" class="card-img-top" alt="Project Three">
+                     <div class="project-overlay">
+                        <a href="#" class="btn btn-light">View Project</a>
+                     </div>
+                  </div>
+                  <div class="card-body">
+                     <h5 class="card-title">Project Three</h5>
+                     <p class="card-text">Personal portfolio website.</p>
+                  </div>
                </div>
-            </div>
             </div>
          </div>
       </div>
    </section>
+
+   <!-- Contact Section with Bento Design -->
+   <section id="contact" class="min-vh-100 py-5">
+      <div class="container">
+         <h2 class="text-center mb-5 section-title" data-text="CONTACT">CONTACT</h2>
+         
+         <!-- Bento Grid for Contact -->
+         <div class="contact-bento-grid">
+            <!-- Contact Form - Large -->
+            <div class="bento-item contact-form-box glass-effect slide-up">
+               <h3 class="mb-4 text-gradient">Send Me a Message</h3>
+               <form>
+                  <div class="mb-3">
+                     <input type="text" class="form-control glass-input" placeholder="Your Name" required>
+                  </div>
+                  <div class="mb-3">
+                     <input type="email" class="form-control glass-input" placeholder="Your Email" required>
+                  </div>
+                  <div class="mb-3">
+                     <textarea class="form-control glass-input" rows="4" placeholder="Your Message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-orange w-100 btn-hover">Send Message</button>
+               </form>
+            </div>
+
+            <!-- Email Box -->
+            <div class="bento-item contact-info-box glass-effect slide-up" style="animation-delay: 0.1s;">
+               <div class="contact-icon">📧</div>
+               <h4 class="mt-3">Email</h4>
+               <p class="text-white">christianjake@example.com</p>
+            </div>
+
+            <!-- Location Box -->
+            <div class="bento-item contact-info-box glass-effect slide-up" style="animation-delay: 0.2s;">
+               <div class="contact-icon">📍</div>
+               <h4 class="mt-3">Location</h4>
+               <p class="text-white">Philippines</p>
+            </div>
+
+            <!-- Social Links Box -->
+            <div class="bento-item contact-social-box glass-effect slide-up" style="animation-delay: 0.3s;">
+               <h4 class="mb-4">Connect With Me</h4>
+               <div class="social-links">
+                  <a href="#" class="social-link">GitHub</a>
+                  <a href="#" class="social-link">LinkedIn</a>
+                  <a href="#" class="social-link">Twitter</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer -->
    <footer class="py-4 mt-5" id="footer">
-   <div class="container text-center">
-      <h5 class="fw-bold mb-2">Christian Jake</h5>
-      <p class="mb-1">IT Student • Beginner Web Developer</p>
-      <small class="text-muted">
-         © 2026 Christian Jake. All rights reserved.
-      </small>
-   </div>
+      <div class="container text-center">
+         <h5 class="fw-bold mb-2">Christian Jake</h5>
+         <p class="mb-1">IT Student • Beginner Web Developer</p>
+         <small class="text-muted">
+            © 2026 Christian Jake. All rights reserved.
+         </small>
+      </div>
    </footer>
 
-
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   <!--<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>-->
+   
+   <!-- Scroll Animation Script -->
+   <script>
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+               target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start'
+               });
+            }
+         });
+      });
+
+      // Intersection Observer for scroll animations
+      const observerOptions = {
+         threshold: 0.1,
+         rootMargin: '0px 0px -100px 0px'
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+         entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               entry.target.classList.add('visible');
+            }
+         });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document.querySelectorAll('.slide-up, .fade-in-up, .scale-in').forEach(el => {
+         observer.observe(el);
+      });
+   </script>
 </body>
 </html>

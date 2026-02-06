@@ -1,10 +1,11 @@
 body{
    text-align: center;
-   background-color: antiquewhite;
+   background-color: black;
+   color: white;
 }
 
 h1{
-   background-color: aqua;
+   background-color: orange;
    width: 500px;
    margin-left: 34%;
    padding: 20px;
@@ -28,7 +29,7 @@ img{
 }
 
 .name{
-   color: navy;
+   color: orange;
    font-size: 30px;
    font-style: italic;
    font-weight: bold;
@@ -44,27 +45,14 @@ img{
               0 1px 2px -1px rgba(0, 0, 0, 0.1);
 }
 
-.achievement:hover{
-   top: -10px;
-   background-color: blue;
-   color: black;
-   cursor: pointer;
-}
-
-.techstak:hover{
-   top: -10px;
-   background-color: blue;
-   color: black;
-   cursor: pointer;
-}
-
 .techHeading{
    font-size: 38px;
    font-style: italic;
-   color: navy;
+   color: orange;
    font-style: italic;
 
 }
+
 
 ul, ol{
    margin-left: 50px;

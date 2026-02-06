@@ -1,9 +1,10 @@
 <<<<<<< HEAD
 
 =======
-*.jpg
-css
+
+
 >>>>>>> bcb8606 (Connects the biography and add the biography file)
+*.jpg
 node_modules/
 AnimalCard.html
 login.html
